@@ -23,7 +23,7 @@ f_debian(){
 		apt-get install -y mingw32-runtime gcc-mingw32 mingw32-binutils &> /tmp/smbexec-inst/checkinstall #Old systems, hopefully this is never used
 	else
 		echo -e "\e[1;34m[*]\e[0m Installing mingw requirements..."
-		apt-get install -y binutils-mingw-w64 gcc-mingw-w64 mingw-w64 mingw-w64-dev &> /tmp/smbexec-inst/checkinstall
+		apt-get install -y binutils-mingw-w64 gcc-mingw-w64 mingw-w64 mingw-w64-x86-64-dev &> /tmp/smbexec-inst/checkinstall
 	fi
 
 	reqs="autoconf cmake comerr-dev g++ gcc libtalloc-dev libtevent-dev libpopt-dev libbsd-dev zlib1g-dev libc6-dev make nmap python-dev bundler wget xterm"
